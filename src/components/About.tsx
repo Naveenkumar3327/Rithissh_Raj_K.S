@@ -1,7 +1,7 @@
 import React from 'react';
 import { Code, Database, Palette, Zap } from 'lucide-react';
 
-const About: React.FC = () => {
+const About = () => {
   return (
     <section id="about" className="py-20 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-black">
       <div className="max-w-6xl mx-auto">
@@ -13,26 +13,26 @@ const About: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
+          {/* Left Section */}
           <div className="space-y-6">
             <div className="bg-gray-900/50 backdrop-blur-xl rounded-2xl p-8 border border-cyan-500/20">
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Hi! Naan <span className="font-semibold text-cyan-400">Rithisshraj</span>, oru passionate developer with a strong interest in 
-                  <span className="font-semibold text-blue-400"> Software Development</span> and 
-                  <span className="font-semibold text-purple-400"> Creative Technologies</span>. 
-                  Enakku backend & frontend la equal interest irukku, and I love solving real-world problems using code.
+                  Hello! I’m <span className="font-semibold text-cyan-400">Rithisshraj</span>, a passionate developer with a deep interest in
+                  <span className="font-semibold text-blue-400"> Software Engineering</span> and
+                  <span className="font-semibold text-purple-400"> Creative Technology</span>.
+                  I'm equally drawn to both frontend and backend development, and I enjoy using code to bring impactful ideas to life.
                 </p>
-                
+
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  With hands-on projects, internships and strong technical knowledge, I'm continuously learning and building 
-                  <span className="font-semibold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent"> innovative tech solutions</span> 
-                  that make a difference in people's lives.
+                  Through hands-on projects, internships, and a strong technical foundation, I strive to build
+                  <span className="font-semibold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent"> meaningful and innovative tech solutions</span>
+                  that solve real-world problems and enhance user experiences.
                 </p>
               </div>
             </div>
 
-            {/* Tech Stack Highlights */}
+            {/* Tech Stack Cards */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-gray-900/50 backdrop-blur-xl rounded-xl p-4 border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300">
                 <Code className="text-cyan-400 mb-2" size={24} />
@@ -57,7 +57,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Stats & Visual */}
+          {/* Right Section */}
           <div className="space-y-6">
             {/* Profile Card */}
             <div className="bg-gray-900/50 backdrop-blur-xl rounded-2xl p-8 border border-cyan-500/20 text-center">
@@ -78,7 +78,7 @@ const About: React.FC = () => {
               </div>
             </div>
 
-            {/* Stats */}
+            {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-4">
               <div className="text-center p-4 bg-gray-900/50 backdrop-blur-xl rounded-xl border border-cyan-500/20">
                 <div className="text-2xl font-bold text-cyan-400 mb-1">5+</div>
